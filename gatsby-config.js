@@ -5,16 +5,25 @@ module.exports = {
   siteMetadata: {
     title: "Depro",
   },
-  plugins: ["gatsby-plugin-image",
-  "gatsby-plugin-sharp",
-  {
-    resolve: "gatsby-source-filesystem",
-    options: {
-      name: `blog`,
-      path: `${__dirname}/Blog`,
-    }
-  },
-  "gatsby-plugin-mdx",
-],
-  
+  plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/Blog`,
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      }
+    },
+    "gatsby-plugin-mdx",
+  ],
+
 }
