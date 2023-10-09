@@ -1,6 +1,7 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
 module.exports = {
   siteMetadata: {
     title: "Depro",
@@ -25,5 +26,8 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
   ],
+
+
+
 
 }
