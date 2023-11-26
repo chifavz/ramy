@@ -6,7 +6,7 @@ import Seo from '../components/Seo'
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-      <p>photo</p>
+      <p>myphoto</p>
       <StaticImage
         alt="High builden view"
         src="../images/dmain.jpg"
